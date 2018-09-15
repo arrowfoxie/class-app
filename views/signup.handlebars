@@ -1,4 +1,4 @@
-<form action="/signup" method="POST">
+{{!-- <form action="/signup" method="POST">
   <div class="form-group">
     <input type="text" placeholder="First Name" , name="firstname">
   </div>
@@ -15,4 +15,47 @@
     <input type="password" placeholder="Confirm Password" , name="password1">
   </div>
   <button type="submit">Register</button>
-</form>
+</form> --}}
+
+<body>
+    <form action="/Register" method="POST">
+       <h3 class="text-center text-white pt-5">Register</h3> 
+        <div class="container">
+            <div id="register-row" class="row justify-content-center align-items-center">
+                <div id="register-column" class="col-md-6">
+                    <div id="register-box" class="col-md-12">
+                        <form id="register-form" class="form" action="" method="post">
+                            <h2 class="text-center mb-4">Register</h2>
+                            <div class="form-group">
+                                <label for="firstname">FIRST NAME:</label><br>
+                                <input type="text" name="firstname" id="firstname" placeholder="Enter first name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">LAST NAME:</label><br>
+                                <input type="text" name="lastname" id="lastname" placeholder="Enter last name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">EMAIL ADDRESS:</label><br>
+                                <input type="text" name="email" id="email" placeholder="student@example.com" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">PASSWORD:</label><br>
+                                <input type="password" name="password" id="password" placeholder="Enter your password" class="form-control">
+                            </div>
+                             <div class="form-group">
+                                <label for="confirmpassword">CONFIRM PASSWORD:</label><br>
+                                <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm your password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="register" name="register" class="btn" value="Register">
+                            </div>
+                            <div id="register-link" class="text-right">
+                                <a href="/login" class="reg">Login here</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

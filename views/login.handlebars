@@ -1,7 +1,7 @@
 {{#if success}}
 <div class="success">{{ success }}</div>
 {{/if}}
-<form action="/login" method="post">
+{{!-- <form action="/login" method="post">
   <div class="form-group">
     <input type="text" placeholder="Email Address" , name="email">
   </div>
@@ -9,4 +9,34 @@
     <input type="password" placeholder="Password" , name="password">
   </div>
   <button type="submit">Login</button>
-</form>
+</form> --}}
+<body>
+    <form action="/login" method="post">
+        <h3 class="text-center text-white pt-5">Login form</h3>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="" method="post">
+                            <h2 class="text-center  mb-4">Login</h2>
+                            <div class="form-group">
+                                <label for="email">EMAIL ADDRESS:</label><br>
+                                <input type="text" name="email" id="email" placeholder="student@example.com" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">PASSWORD:</label><br>
+                                <input type="password" name="password" id="password" placeholder="Enter your password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="submit" class="btn" value="submit">
+                            </div>
+                            <div id="register-link" class="text-right">
+                                <a class="reg" href="/signup">Register here</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

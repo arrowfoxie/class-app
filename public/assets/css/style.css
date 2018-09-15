@@ -1,3 +1,26 @@
+/* Signup form */
+
+
+ .container  {
+  width: 600px;
+  color: #6D83A5;
+  background-color: rgb(245, 235, 235);
+ }
+
+.btn{
+  background-color: #6D83A5;
+  color: #fafafa;
+  width: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+} 
+
+.reg{
+  color : #6D83A5;
+}
+
 ul.success li {
   list-style: none;
   padding: 10px 0;
