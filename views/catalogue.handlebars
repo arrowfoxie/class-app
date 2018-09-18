@@ -1,0 +1,7 @@
+<h2 class="text-center my-4">Course Catalogue</h2>
+<input class="d-block mx-auto mb-4 pb-2" type="text" id="filter" placeholder="Search Classes">
+<ul class="classes list-group mx-auto mb-5">
+  {{#each classes}}
+  {{> catalogue/class-block}}
+  {{/each}}
+</ul>

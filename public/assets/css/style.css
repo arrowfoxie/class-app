@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf');
+}
+
+body {
+  background-color: #fefefe;
+}
+
 /* Signup form */
 
 
@@ -5,11 +14,11 @@
   padding-top: 40px;
   width:400px;
   color: #6D83A5;
-  background-color: rgb(245, 235, 235); 
+  background-color: #fefefe; 
   
  }
 
-.btn{
+.formbtn{
   background-color: #6D83A5;
   color: #fafafa;
   width: 100px;
@@ -21,6 +30,49 @@
 
 .reg{
   color : #6D83A5;
+}
+
+
+ul,
+#filter {
+  width: 90%;
+}
+
+#filter {
+  border: none;
+  border-radius: 0;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+#filter:focus {
+  border-bottom: 3px solid #7b93b8;
+}
+
+li.class-name.is-open {
+  background-color: #f8f9fa;
+}
+
+li.class-name::before {
+  font-family: 'FontAwesome';
+  content: '\f0da';
+  float: left;
+  margin: 1px 0;
+  margin-right: 6px;
+}
+li.class-name.is-open::before {
+  transform: rotate(90deg);
+}
+
+li.class-name:hover {
+  cursor: pointer;
+}
+
+li.class-content {
+  display: none;
+}
+li.class-content.is-open {
+  display: block;
 }
 
 ul.success li {
@@ -67,4 +119,32 @@ div.success {
   margin: 10px 0;
   padding: 10px 0;
   text-align: center;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  ul,
+  #filter {
+    width: 500px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  ul,
+  #filter {
+    width: 600px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  ul,
+  #filter {
+    width: 650px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
