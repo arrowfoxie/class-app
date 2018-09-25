@@ -66,21 +66,19 @@ body {
   padding-bottom: 20px;
   background-color: #f9f9f9;
 }
-
 .register .title,
 .search-bar {
   margin: 4%;
-  top: 0;
   padding-bottom: 20px;
   background-color: transparent;
 }
 
-.search-bar {
+.search-bar,
+ul.classes {
+  position: relative;
+  font-weight: 400;
   color: #f3f3f3;
-}
-
-.search-bar input:hover {
-  background-color: white;
+  bottom: 100px;
 }
 
 .form-control {
@@ -127,12 +125,25 @@ ul.classes,
 #filter {
   border: none;
   border-radius: 0;
-  border-bottom: 3px solid rgba(0, 0, 0, 0.1);
-  outline: none;
+  color: #f3f3f3;
+  border-bottom: 3px solid var(--main-blue);
+}
+
+#filter::placeholder {
+  color: #f3f3f3;
+  font-size: 1.3rem;
+}
+
+*:focus {
+  border: none;
 }
 
 #filter:focus {
   border-bottom: 3px solid #7b93b8;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #f3f3f3;
+  color: #f3f3f3;
 }
 
 li.class-name.is-open {
@@ -199,16 +210,16 @@ li.class-content {
 
 li.class-content.is-open {
   display: block;
+  color: #444;
+}
+
+ul.regClasses {
+  position: static;
 }
 
 /* Header Img */
 
 .header-img {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: auto;
   opacity: 0.4;
   margin: auto;
   min-width: 100%;
@@ -463,7 +474,7 @@ div.success {
   div.alert,
   div.success,
   ul.error {
-    width: 600px;
+    width: 400px;
   }
 }
 
