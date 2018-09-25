@@ -316,12 +316,15 @@ button.proceed {
 footer {
   position: fixed;
   bottom: 0;
-  height: 25px;
+  height: 35px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
-  color: slategray;
+  color:#a0aab6
+}
 
+.copyright {
+padding: 6px;
 }
 
 .link {

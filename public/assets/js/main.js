@@ -295,6 +295,7 @@
               .empty()
               .append(`${name}?`);
             $('.navbar').removeClass('sticky-top');
+            $('footer').hide();
           });
           $('.dropSubmit').on('click', function(e) {
             e.preventDefault();
