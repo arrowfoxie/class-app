@@ -55,7 +55,8 @@ body {
 /* Forms */
 .login,
 .signup,
-.register {
+.register,
+.drop {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -98,7 +99,8 @@ body {
   background-color: #f9f9f9;
 }
 
-.title {
+
+drop .title {
   color: #444;
 }
 
@@ -311,11 +313,17 @@ button.proceed {
 
 
 /* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 25px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: slategray;
 
-.test {
-  background-color: red;
-  height: 20%;
 }
+
 .link {
   color: var(--main-blue);
 }
@@ -325,7 +333,8 @@ button.proceed {
 }
 
 /* Register Modal */
-.regModal {
+.regModal,
+.dropModal {
   position: fixed;
   z-index: 100;
   left: 0;
@@ -341,6 +350,10 @@ button.proceed {
 
 .btn.bg-red:hover {
   background-color: var(--main-red-hover);
+}
+
+.dropBtn {
+  float: right;
 }
 
 /* Validation Flash Messages */
@@ -509,8 +522,8 @@ div.success {
   }
   .login,
   .signup,
-  .register .register,
-  .search-bar {
+  .register,
+  .drop {
     max-width: 90%;
   }
 }
