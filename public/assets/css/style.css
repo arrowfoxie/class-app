@@ -438,6 +438,11 @@ div.success {
   ul.error {
     width: 520px;
   }
+  #classes {
+  margin-bottom: -48px;
+    margin-top: -11%;
+    padding-top: 40px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -463,6 +468,12 @@ div.success {
   ul.error {
     width: 550px;
   }
+
+  #classes {
+  margin-bottom: -48px;
+    margin-top: -11%;
+    padding-top: 81px;
+}
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -545,10 +556,12 @@ div.success {
     left: -20%;
   }
 
-  #classes {
-    margin-bottom: 0;
-    margin-top: -10%;
-  }
+
+    #classes {
+      margin-bottom: -48px;
+        margin-top: -11%;
+        padding-top: 20px;
+      }
 }
 
 @media (max-width: 360px) {
