@@ -419,7 +419,7 @@ div.success {
   }
   ul.addedClasses {
     left: 10px;
-    width: 300px;
+    width: 250px;
   }
   button.proceed {
     left: 25px;
@@ -428,7 +428,7 @@ div.success {
   }
   ul.classes,
   #filter {
-    width: 500px;
+    width: 250px;
   }
   #logo {
     width: 110px;
@@ -455,7 +455,7 @@ div.success {
 
   ul.classes,
   #filter {
-    width: 600px;
+    width: 488px;
   }
 
   div.alert,
