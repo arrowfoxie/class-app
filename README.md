@@ -12,7 +12,7 @@ view available courses, register for and/or drop classes, and pay tuition.
 * [Express](https://expressjs.com/)
 * [MySql](https://github.com/mysqljs/mysql)
 * [Handlebars](http://handlebarsjs.com/)
-* [Passport JS](http://www.passportjs.org/docs/
+* [Passport](http://www.passportjs.org/docs/)
 
  ## Collaborators
  * **Igor Chernyshev** - [GitHub](https://github.com/igorcweb)
